@@ -1,0 +1,71 @@
+{
+  "name": "bridgevoice-website",
+  "version": "1.0.0",
+  "description": "BridgeVoice - Connecting voices across the digital divide",
+  "main": "index.html",
+  "scripts": {
+    "start": "serve . -p 3000",
+    "build": "npm run minify-css && npm run minify-js",
+    "minify-css": "cleancss -o dist/css/styles.min.css css/styles.css",
+    "minify-js": "terser js/main.js -o dist/js/main.min.js --compress --mangle",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "lint": "eslint js/ --ext .js",
+    "lint:fix": "eslint js/ --ext .js --fix",
+    "format": "prettier --write \"**/*.{js,css,html,json}\"",
+    "validate": "npm run lint && npm run test",
+    "lighthouse": "lighthouse http://localhost:3000 --output=json --output-path=./lighthouse-report.json",
+    "optimize": "npm run build && npm run lighthouse"
+  },
+  "keywords": [
+    "bridgevoice",
+    "communication",
+    "technology",
+    "accessibility",
+    "responsive",
+    "web"
+  ],
+  "author": "BridgeVoice Team",
+  "license": "MIT",
+  "devDependencies": {
+    "@babel/core": "^7.23.0",
+    "@babel/preset-env": "^7.23.0",
+    "clean-css-cli": "^5.6.2",
+    "eslint": "^8.50.0",
+    "eslint-config-standard": "^17.1.0",
+    "eslint-plugin-import": "^2.29.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-promise": "^6.1.0",
+    "jest": "^29.7.0",
+    "jest-environment-jsdom": "^29.7.0",
+    "lighthouse": "^11.2.0",
+    "prettier": "^3.0.3",
+    "serve": "^14.2.1",
+    "terser": "^5.22.0"
+  },
+  "dependencies": {},
+  "jest": {
+    "testEnvironment": "jsdom",
+    "coverageDirectory": "coverage",
+    "collectCoverageFrom": [
+      "js/**/*.js",
+      "!js/**/*.test.js",
+      "!js/vendor/**"
+    ],
+    "coverageReporters": [
+      "html",
+      "text",
+      "lcov"
+    ],
+    "testMatch": [
+      "**/__tests__/**/*.js",
+      "**/?(*.)+(spec|test).js"
+    ]
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead"
+  ]
+}
