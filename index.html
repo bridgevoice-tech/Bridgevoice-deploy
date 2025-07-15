@@ -1,209 +1,26 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="BridgeVoice - Connecting voices across the digital divide">
-    <meta name="keywords" content="bridgevoice, communication, technology, accessibility">
-    <meta name="author" content="BridgeVoice Team">
-    <title>BridgeVoice - Connecting Voices</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="icon" href="favicon.svg" type="image/svg+xml">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BridgeVoice Contact</title>
 </head>
 <body>
-    <a href="#main-content" class="skip-link">Skip to main content</a>
-    
-    <header class="header" role="banner">
-        <nav class="nav" role="navigation" aria-label="Main navigation">
-            <div class="nav-container">
-                <div class="logo">
-                    <a href="#" aria-label="BridgeVoice Home">
-                        <h1>BridgeVoice</h1>
-                    </a>
-                </div>
-                <button class="nav-toggle" aria-label="Toggle navigation menu" aria-expanded="false">
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                    <span class="hamburger"></span>
-                </button>
-                <ul class="nav-menu" role="menubar">
-                    <li role="none"><a href="#home" role="menuitem">Home</a></li>
-                    <li role="none"><a href="#about" role="menuitem">About</a></li>
-                    <li role="none"><a href="#services" role="menuitem">Services</a></li>
-                    <li role="none"><a href="#contact" role="menuitem">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+  <section id="contact" style="max-width: 600px; margin: auto; padding: 2rem;">
+    <h2 style="text-align: center;">Contact Us</h2>
+    <form action="mailto:info@bridgevoice.ai" method="POST" enctype="text/plain">
+      <label for="name">Name</label><br />
+      <input type="text" id="name" name="name" required style="width: 100%; padding: 0.5rem;" /><br /><br />
 
-    <main id="main-content" class="main" role="main">
-        <section id="home" class="hero" aria-labelledby="hero-heading">
-            <div class="hero-content">
-                <h2 id="hero-heading">Connecting Voices Across the Digital Divide</h2>
-                <p class="hero-description">
-                    BridgeVoice empowers communities through accessible communication technology, 
-                    breaking down barriers and creating meaningful connections.
-                </p>
-                <button class="cta-button" aria-describedby="cta-description">
-                    Get Started
-                </button>
-                <p id="cta-description" class="sr-only">
-                    Click to learn more about our services and how we can help you
-                </p>
-            </div>
-            <div class="hero-image">
-                <img src="images/hero-image.svg" alt="People connecting through technology" loading="lazy">
-            </div>
-        </section>
+      <label for="email">Email</label><br />
+      <input type="email" id="email" name="email" required style="width: 100%; padding: 0.5rem;" /><br /><br />
 
-        <section id="about" class="about" aria-labelledby="about-heading">
-            <div class="container">
-                <h2 id="about-heading">About BridgeVoice</h2>
-                <div class="about-content">
-                    <div class="about-text">
-                        <p>
-                            At BridgeVoice, we believe that everyone deserves access to clear, 
-                            reliable communication technology. Our mission is to bridge the gap 
-                            between traditional communication methods and modern digital solutions.
-                        </p>
-                        <p>
-                            We specialize in creating accessible, user-friendly platforms that 
-                            connect people regardless of their technical background or physical abilities.
-                        </p>
-                    </div>
-                    <div class="about-stats">
-                        <div class="stat">
-                            <h3>10,000+</h3>
-                            <p>Users Connected</p>
-                        </div>
-                        <div class="stat">
-                            <h3>50+</h3>
-                            <p>Languages Supported</p>
-                        </div>
-                        <div class="stat">
-                            <h3>99.9%</h3>
-                            <p>Uptime</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
+      <label for="message">Message</label><br />
+      <textarea id="message" name="message" rows="5" required style="width: 100%; padding: 0.5rem;"></textarea><br /><br />
 
-        <section id="services" class="services" aria-labelledby="services-heading">
-            <div class="container">
-                <h2 id="services-heading">Our Services</h2>
-                <div class="services-grid">
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <img src="images/voice-bridge.svg" alt="" role="presentation">
-                        </div>
-                        <h3>Voice Bridge</h3>
-                        <p>
-                            Connect multiple communication channels into one unified platform 
-                            for seamless conversation management.
-                        </p>
-                    </article>
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <img src="images/accessibility.svg" alt="" role="presentation">
-                        </div>
-                        <h3>Accessibility Tools</h3>
-                        <p>
-                            Comprehensive accessibility features including screen reader support, 
-                            keyboard navigation, and customizable interfaces.
-                        </p>
-                    </article>
-                    <article class="service-card">
-                        <div class="service-icon">
-                            <img src="images/real-time.svg" alt="" role="presentation">
-                        </div>
-                        <h3>Real-time Translation</h3>
-                        <p>
-                            Break down language barriers with our AI-powered real-time 
-                            translation service supporting 50+ languages.
-                        </p>
-                    </article>
-                </div>
-            </div>
-        </section>
-
-        <section id="contact" class="contact" aria-labelledby="contact-heading">
-            <div class="container">
-                <h2 id="contact-heading">Get in Touch</h2>
-                <div class="contact-content">
-                    <div class="contact-info">
-                        <h3>Contact Information</h3>
-                        <div class="contact-item">
-                            <strong>Email:</strong>
-                            <a href="mailto:info@bridgevoice.com">info@bridgevoice.com</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Phone:</strong>
-                            <a href="tel:+1-555-0123">+1 (555) 012-3456</a>
-                        </div>
-                        <div class="contact-item">
-                            <strong>Address:</strong>
-                            <address>
-                                123 Tech Street<br>
-                                Innovation City, IC 12345<br>
-                                United States
-                            </address>
-                        </div>
-                    </div>
-                    <form class="contact-form" aria-label="Contact form">
-                        <div class="form-group">
-                            <label for="name">Name *</label>
-                            <input type="text" id="name" name="name" required aria-required="true">
-                        </div>
-                        <div class="form-group">
-                            <label for="email">Email *</label>
-                            <input type="email" id="email" name="email" required aria-required="true">
-                        </div>
-                        <div class="form-group">
-                            <label for="message">Message *</label>
-                            <textarea id="message" name="message" rows="5" required aria-required="true"></textarea>
-                        </div>
-                        <button type="submit" class="submit-button">Send Message</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-    </main>
-
-    <footer class="footer" role="contentinfo">
-        <div class="container">
-            <div class="footer-content">
-                <div class="footer-section">
-                    <h3>BridgeVoice</h3>
-                    <p>Connecting voices across the digital divide.</p>
-                </div>
-                <div class="footer-section">
-                    <h4>Quick Links</h4>
-                    <ul>
-                        <li><a href="#home">Home</a></li>
-                        <li><a href="#about">About</a></li>
-                        <li><a href="#services">Services</a></li>
-                        <li><a href="#contact">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
-                    <h4>Legal</h4>
-                    <ul>
-                        <li><a href="privacy.html">Privacy Policy</a></li>
-                        <li><a href="terms.html">Terms of Service</a></li>
-                        <li><a href="accessibility.html">Accessibility Statement</a></li>
-                    </ul>
-                </div>
-            </div>
-            <div class="footer-bottom">
-                <p>&copy; 2024 BridgeVoice. All rights reserved.</p>
-            </div>
-        </div>
-    </footer>
-
-    <script src="js/main.js"></script>
+      <button type="submit" style="padding: 0.75rem 1.5rem;">Send</button>
+    </form>
+  </section>
 </body>
 </html>
+✉️ Added contact form to send to info@bridgevoice.ai
