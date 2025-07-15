@@ -1,0 +1,48 @@
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f9f9fc;
+  color: #222;
+  margin: 0;
+  padding: 0;
+}
+.container {
+  max-width: 700px;
+  margin: auto;
+  padding: 2rem;
+}
+h1, h2 {
+  color: #4B0082;
+}
+.subtitle {
+  color: #555;
+}
+form input, form textarea {
+  width: 100%;
+  padding: 0.6rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+}
+form button {
+  padding: 0.75rem 1.5rem;
+  background-color: #4B0082;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+}
+form button:hover {
+  background-color: #3A0070;
+}
+.links {
+  margin-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+.links a {
+  text-decoration: none;
+  color: #3A86FF;
+  font-weight: bold;
+}
