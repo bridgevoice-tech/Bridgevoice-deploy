@@ -8,7 +8,7 @@
           "value": "www.bridgevoice.ai"
         }
       ],
-      "destination": "https://bridgevoice.ai/:1",
+      "destination": "https://bridgevoice.ai/",
       "permanent": true
     }
   ]
