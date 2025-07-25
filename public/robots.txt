@@ -1,0 +1,4 @@
+User-agent: *
+Disallow:
+
+Sitemap: https://bridgevoice.ai/sitemap.xml
