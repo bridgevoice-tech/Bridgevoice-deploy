@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 150">
+  <rect width="300" height="150" fill="#C7D2FE"/>
+  <path d="M20,75 Q150,10 280,75 Q150,140 20,75 Z" fill="#4F46E5"/>
+  <text x="50%" y="50%" dominant-baseline="middle" text-anchor="middle" fill="#fff" font-size="18">
+    Voice Bridge
+  </text>
+</svg>
