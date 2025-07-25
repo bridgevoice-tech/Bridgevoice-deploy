@@ -1,7 +1,9 @@
 {
-  "name": "bridgevoice",
+  "name": "bridgevoice-website",
   "version": "1.0.0",
   "scripts": {
-    "start": "echo Starting BridgeVoice..."
-  }
+    "build": "echo 'No build step required'",
+    "dev": "echo 'Use Vercel dev for preview'"
+  },
+  "license": "MIT"
 }
