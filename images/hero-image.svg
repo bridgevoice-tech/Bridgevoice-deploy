@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 300">
+  <rect width="500" height="300" fill="#EEF2FF"/>
+  <circle cx="150" cy="150" r="80" fill="#4F46E5"/>
+  <text x="270" y="160" font-size="28" fill="#333" font-family="Arial, sans-serif">
+    Real-time Translation
+  </text>
+</svg>
