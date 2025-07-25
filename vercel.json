@@ -1,9 +1,10 @@
 {
-  "redirects": [
+  "outputDirectory": "public",
+  "cleanUrls": true,
+  "rewrites": [
     {
       "source": "/admin",
-      "destination": "/admin.html",
-      "statusCode": 301
+      "destination": "/admin.html"
     }
   ]
 }
